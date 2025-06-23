@@ -1,5 +1,7 @@
 ignoredBuiltDependencies:
+  - '@firebase/util'
   - esbuild
+  - protobufjs
 
 onlyBuiltDependencies:
   - '@clerk/shared'
