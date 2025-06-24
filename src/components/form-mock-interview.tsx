@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "@clerk/clerk-react";
 import { toast } from "sonner";
-import { Heading, Trash2 } from "lucide-react";
+import {  Trash2 } from "lucide-react";
 import { Headings } from "./headings";
 import { Button } from "./ui/button";
 import { Separator } from "./ui/separator";
@@ -187,7 +187,7 @@ export const FormMockInterview = ({ initialData }: FormMockInterviewProps) => {
         breadCrumpItems={[{ label: "Mock Interviews", link: "/generate" }]}
       />
       <div className="mt-4 flex items-center justify-center w-full">
-        <Headings title={title} isSubmitting />
+        <Headings title={title} />
 
         {initialData && (
           <Button size={"icon"} variant={"ghost"} >

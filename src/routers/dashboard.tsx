@@ -12,8 +12,10 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { toast } from "sonner";
 
-export const Dashboard = () => {
+// ✅ Image import
+import NotFoundImg from "@/assets/svg/not-found.svg";
 
+export const Dashboard = () => {
   const [interviews, setInterviews] = useState<Interview[]>([]);
   const [loading, setLoading] = useState(false);
 
@@ -33,29 +35,23 @@ export const Dashboard = () => {
           const id = doc.id;
           return {
             id,
-            ...doc.data()
-          }
+            ...doc.data(),
+          };
         }) as Interview[];
         setInterviews(interviewList);
         setLoading(false);
-      }, (error) => {
-        console.error("Error on fetching  ", error);
+      },
+      (error) => {
+        console.error("Error on fetching ", error);
         toast.error("Error..", {
           description: "Something went wrong.. Try again later.",
         });
         setLoading(false);
-      });
+      }
+    );
 
     return () => unsubscribe();
-
-
-
   }, [userId]);
-
-
-
-
-
 
   return (
     <>
@@ -63,21 +59,18 @@ export const Dashboard = () => {
         {/* heading */}
         <Headings
           title="Dashboard"
-          description="Create and start you AI Mock interview"
+          description="Create and start your AI Mock interview"
         />
         {/* action button */}
-
         <Link to={"/generate/create"} className="mt-4">
           <Button size={"sm"}>
             <Plus className="min-w-5 min-h-5 mr-1" />
             Add New
           </Button>
         </Link>
+      </div>
 
-
-      </div >
-
- <Separator className="my-8" />
+      <Separator className="my-8" />
 
       <div className="md:grid md:grid-cols-3 gap-3 py-4">
         {loading ? (
@@ -86,14 +79,14 @@ export const Dashboard = () => {
           ))
         ) : interviews.length > 0 ? (
           interviews.map((interview) => (
-            <InterviewPin key={interview.id} interview = {interview} />
+            <InterviewPin key={interview.id} interview={interview} />
           ))
         ) : (
           <div className="md:col-span-3 w-full flex flex-grow items-center justify-center h-96 flex-col">
             <img
-              src="/assets/svg/not-found.svg"
+              src={NotFoundImg}
               className="w-44 h-44 object-contain"
-              alt=""
+              alt="Not Found"
             />
 
             <h2 className="text-lg font-semibold text-muted-foreground">

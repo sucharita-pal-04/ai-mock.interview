@@ -4,7 +4,7 @@ import type { Interview } from "@/types";
 import { doc, getDoc } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { Loader } from "lucide-react";
+
 
 
 export const CreateEditPage = () => {
@@ -12,7 +12,7 @@ export const CreateEditPage = () => {
 
   const { interviewId } = useParams<{ interviewId: string }>();
   const [interview, setInterview] = useState<Interview | null>(null);
-  const[isLoading, setIsLoading] = useState(false);
+ 
 
   useEffect(() => {
     const fetchInterview = async () => {

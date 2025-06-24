@@ -1,19 +1,16 @@
 import type { Interview } from '@/types';
-import { useAuth } from '@clerk/clerk-react';
-import { useState } from 'react';
+
 import { useNavigate } from 'react-router-dom';
 
 import {
   Card,
-  CardContent,
   CardDescription,
   CardFooter,
-  CardHeader,
   CardTitle,
 } from "@/components/ui/card"
 import { Badge } from './ui/badge';
 import { cn } from '@/lib/utils';
-import { Eye, Newspaper, Pencil, Sparkles } from 'lucide-react';
+import { Eye, Newspaper,  Sparkles } from 'lucide-react';
 import { TooltipButton } from './tooltip-button';
 
 
@@ -29,11 +26,6 @@ onMockPage=false,
  }: InterviewPinProps) => {
 
   const navigate = useNavigate();
-  const [loading, setLoading] = useState(false);
-  const {  userId } = useAuth();
-
-
-
 
   return  ( <Card  className=" p-4 rounded-md shadow-none hover:shadow-md  shadow-gray-100 cursor-pointer transition-all space-y-4">
     <CardTitle className="text-lg">
@@ -76,7 +68,7 @@ onMockPage=false,
               navigate(`/generate/${interview.id}`, {replace: true});
             }}
             
-            disbaled={false}
+            disabled={false}
             buttonClassName="hover:text-sky-500"
             icon={<Eye/>}
             loading={false}
@@ -90,7 +82,7 @@ onMockPage=false,
               navigate(`/generate/feedback/${interview.id}`, {replace: true});
             }}
             
-            disbaled={false}
+            disabled={false}
             buttonClassName="hover:text-yellow-500"
             icon={<Newspaper/>}
             loading={false}
@@ -104,7 +96,7 @@ onMockPage=false,
               navigate(`/generate/interview/${interview.id}`, {replace: true});
             }}
             
-            disbaled={false}
+            disabled={false}
             buttonClassName="hover:text-sky-500"
             icon={<Sparkles/>}
             loading={false}
