@@ -58,8 +58,20 @@
 git clone https://github.com/sucharita-pal-04/ai-mock-interview.git
 
 ---
-2. Navigate to the Project Directory
-cd ai-mock-interview
+2. Navigate to the Project Directory:
+   cd ai-mock-interview
+---
+3.Install pnpm globally:
+ npm install -g pnpm
+ ---
+4.Install project dependencies:
+  pnpm install
+---
+5.Start the development server:
+ pnpm run dev
+
+
+
 
 
 
