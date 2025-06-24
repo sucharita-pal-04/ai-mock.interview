@@ -1,4 +1,4 @@
-# AI Mock Interview 🎤🤖
+# AI Mock Interview 
 
 **AI Mock Interview** is an innovative web application designed to simulate real-world mock interviews using AI. With seamless user authentication, an intuitive interface, and integration with Google Gemini AI, this project is your ultimate preparation tool for job interviews.
 
@@ -8,7 +8,7 @@
 
 ---
 
-## 🔥 Features
+##  Features
 
 - **AI-Powered Mock Interviews**  
   Simulate realistic interview scenarios using Google Gemini AI with instant feedback.
