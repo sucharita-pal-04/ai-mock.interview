@@ -56,3 +56,64 @@
 Clone the repository:
 ```bash
 git clone https://github.com/sucharita-pal-04/ai-mock-interview.git
+
+📂 Navigate to the Project Directory
+```bash
+cd ai-mock-interview
+🌐 Install pnpm Globally
+bash
+Copy
+Edit
+npm install -g pnpm
+📦 Install Project Dependencies
+bash
+Copy
+Edit
+pnpm install
+🏃 Start the Development Server
+bash
+Copy
+Edit
+pnpm run dev
+🔥 Firebase Setup
+⚙️ Initialize Firebase
+bash
+Copy
+Edit
+firebase init
+🚀 Deploy to Firebase
+bash
+Copy
+Edit
+firebase deploy
+👉 Go to Firebase Project Console
+
+⚙️ Build for Production
+bash
+Copy
+Edit
+pnpm run build
+🔑 Environment Variables
+Create a .env.local file in the project root and add the following:
+
+env
+Copy
+Edit
+VITE_CLERK_PUBLISHABLE_KEY=your_clerk_key
+VITE_FIREBASE_API_KEY=your_firebase_api_key
+VITE_FIREBASE_AUTH_DOMAIN=your_firebase_auth_domain
+VITE_FIREBASE_PROJECT_ID=your_firebase_project_id
+VITE_FIREBASE_STORAGE_BUCKET=your_firebase_storage_bucket
+VITE_FIREBASE_MESSAGING_SENDER_ID=your_firebase_sender_id
+VITE_FIREBASE_APP_ID=your_firebase_app_id
+VITE_GEMINI_API_KEY=your_gemini_api_key
+🚀 Key Features
+✅ AI Feedback: Instant, detailed feedback on your answers.
+
+✅ User Dashboard: Track past interviews and performance stats.
+
+✅ Interactive Questionnaires: MCQs, scenario-based, and coding challenges.
+
+🤝 Contributing
+We welcome contributions!
+Feel free to fork the repo, create a pull request, or report issues.
