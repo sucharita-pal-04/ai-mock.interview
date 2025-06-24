@@ -52,46 +52,9 @@
 - Clerk account
 #!/bin/bash
 
-echo "🔧 Starting AI Mock Interview Project Setup..."
+## Installation
 
-# Step 1: Clone the Repository
-echo "📥 Cloning the repository..."
+Clone the repository:
+```bash
 git clone https://github.com/sucharita-pal-04/ai-mock-interview.git
 
-# Step 2: Navigate to Project Directory
-cd ai-mock-interview || { echo "❌ Directory not found!"; exit 1; }
-echo "✅ Entered project directory."
-
-# Step 3: Install pnpm Globally
-echo "🌐 Installing pnpm globally..."
-npm install -g pnpm
-
-# Step 4: Install Project Dependencies
-echo "📦 Installing project dependencies..."
-pnpm install
-
-# Step 5: Firebase Initialization
-echo "🔥 Initializing Firebase project..."
-firebase init
-
-# Step 6: Start Development Server
-echo "🚀 Starting the development server..."
-pnpm run dev
-
-echo "🎉 Project setup complete! Visit http://localhost:5173 to view the app."
-
-echo "🔑 Don't forget to create your '.env.local' file with all environment variables."
-
-echo "--------------------------------------"
-echo "Example .env.local file:"
-echo "VITE_CLERK_PUBLISHABLE_KEY=your_clerk_key"
-echo "VITE_FIREBASE_API_KEY=your_firebase_api_key"
-echo "VITE_FIREBASE_AUTH_DOMAIN=your_firebase_auth_domain"
-echo "VITE_FIREBASE_PROJECT_ID=your_firebase_project_id"
-echo "VITE_FIREBASE_STORAGE_BUCKET=your_firebase_storage_bucket"
-echo "VITE_FIREBASE_MESSAGING_SENDER_ID=your_firebase_sender_id"
-echo "VITE_FIREBASE_APP_ID=your_firebase_app_id"
-echo "VITE_GEMINI_API_KEY=your_gemini_api_key"
-echo "--------------------------------------"
-
-echo "✅ All Set! Happy Coding 🎯"
