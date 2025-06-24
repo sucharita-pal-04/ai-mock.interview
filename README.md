@@ -107,19 +107,15 @@ VITE_FIREBASE_MESSAGING_SENDER_ID=your_firebase_sender_id
 VITE_FIREBASE_APP_ID=your_firebase_app_id
 VITE_GEMINI_API_KEY=your_gemini_api_key
 ```
-Key Features
-AI-Driven Insights
-Provides real-time feedback on your interview performance, highlighting strengths and areas for improvement.
+##🚀 Key Features
+AI Feedback: Instant, detailed feedback on your answers.
 
-User-Friendly Dashboard
-Track your progress, access past interviews, and download detailed performance reports.
+User Dashboard: Track past interviews and performance stats.
 
-Interactive Questionnaires
-Engage with diverse question types, including multiple-choice, scenario-based, and technical coding challenges.
----
-Contributing
-We welcome contributions to improve the project. Please feel free to fork the repository, create a pull request, or report any issues you encounter.
+Interactive Questionnaires: MCQs, scenario-based, and coding challenges.
 
+##🤝 Contributing
+We welcome contributions!
+Feel free to fork the repo, create a pull request, or report issues.
 
-
-
+🔗 Important Links
